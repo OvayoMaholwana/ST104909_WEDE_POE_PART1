@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding to UTF-8 for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive design for various screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title for the adoption page -->
+    <title>Paws for a Cause - Adopt a Pet</title>
+    <!-- Link to external CSS for consistent styling across the site -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Import Aptos font from Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Aptos&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section containing navigation -->
+    <header>
+        <!-- Navigation menu for site-wide links -->
+        <nav>
+            <ul>
+                <!-- Navigation links to main pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt a Pet</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content of the adoption page -->
+    <main>
+        <!-- Section for pet adoption gallery and application form -->
+        <section>
+            <!-- Main heading for the adoption page -->
+            <h1>Adopt a Pet</h1>
+            <!-- Filter dropdown to sort pets by type (all, dog, cat) -->
+            <div class="filter">
+                <label for="pet-type">Filter by Pet Type:</label>
+                <select id="pet-type" onchange="filterPets()">
+                    <option value="all">All</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+            </div>
+            <!-- Gallery displaying available pets for adoption -->
+            <div class="pet-gallery">
+                <!-- Subheading for the pet gallery -->
+                <h2>Pets for Adoption</h2>
+                <!-- Pet card for a dog named Buddy -->
+                <div class="pet-card" data-type="dog">
+                    <!-- Image of the dog with inline styling -->
+                    <img src="images/Dog 1.jpg" alt="Dog 1" style="width:45%; height:auto;">
+                    <!-- Pet name -->
+                    <h3>Buddy</h3>
+                    <!-- Pet description -->
+                    <p>2-year-old Labrador, friendly and energetic.</p>
+                </div>
+                <!-- Pet card for a cat named Whiskers -->
+                <div class="pet-card" data-type="cat">
+                    <!-- Image of the cat with inline styling -->
+                    <img src="images/Cat 1.jpg" alt="Cat 2" style="width:45%; height:auto;">
+                    <!-- Pet name -->
+                    <h3>Whiskers</h3>
+                    <!-- Pet description -->
+                    <p>1-year-old tabby, loves to cuddle.</p>
+                </div>
+            </div>
+            <!-- Adoption application form -->
+            <form id="adoption-form">
+                <!-- Subheading for the adoption form -->
+                <h3>Adoption Application</h3>
+                <!-- Input for applicant's name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <!-- Input for applicant's email address -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <!-- Submit button to apply for adoption -->
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2025 Paws for a Cause. All rights reserved.</p>
+    </footer>
+    <!-- External JavaScript file for pet filter and form functionality -->
+    <script src="js/script.js"></script>
+</body>
+</html>
