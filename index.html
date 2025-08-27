@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding to UTF-8 for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive design for various screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title for the homepage -->
+    <title>Paws for a Cause - Home</title>
+    <!-- Link to external CSS for consistent styling across the site -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Import Aptos font from Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Aptos&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section containing navigation -->
+    <header>
+        <!-- Navigation menu for site-wide links -->
+        <nav>
+            <ul>
+                <!-- Navigation links to main pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt a Pet</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content of the homepage -->
+    <main>
+        <!-- Hero section to showcase images and introductory content -->
+        <section class="hero" style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <!-- Image of paws to visually represent the organization’s focus -->
+            <img src="images/paws.jpg" alt="Paws icon or image" style="width:45%; height:auto;">
+            <!-- Image of shelter to highlight the organization’s work -->
+            <img src="images/shelter.jpg" alt="Animal shelter" style="width:45%; height:auto;">
+            <!-- Main heading for the homepage -->
+            <h1>Welcome to Paws for a Cause</h1>
+            <!-- Brief description of the organization’s mission -->
+            <p>Rescuing, rehabilitating, and rehoming stray and abandoned animals in Uitenhage.</p>
+            <!-- Call-to-action button to direct users to the donation page -->
+            <button onclick="window.location.href='donate.html'">Donate Now</button>
+            <!-- Call-to-action button to direct users to the adoption page -->
+            <button onclick="window.location.href='adopt.html'">Adopt a Pet</button>
+        </section>
+    </main>
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2025 Paws for a Cause. All rights reserved.</p>
+    </footer>
+    <!-- External JavaScript file for additional functionality (e.g., filter on adopt.html) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
